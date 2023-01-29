@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Facility_IVDrip"]</xpath>
+		<value>
+			 <tickerType>Normal</tickerType>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Facility_IVDrip"]/comps</xpath>
+		<value>
+			<li Class="VEMedicalDripsDubsBadHygiene.CompProperties_FillNeeds">
+				<thirstFillPerDay>3</thirstFillPerDay>
+				<hygieneFillPerDay>2</hygieneFillPerDay>
+			</li>
+		</value>
+	</Operation>
+	
+
+</Patch>
